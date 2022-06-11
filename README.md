@@ -1,4 +1,4 @@
-# React with TypeScript: TODO Studies Web App
+# React with TypeScript: TODO Studies App
 
 ## Available Scripts
 
