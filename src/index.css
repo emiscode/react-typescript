@@ -1,8 +1,12 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
+* {
+  border: none;
 }
 
-code {
-  font-family: monospace;
+body {
+  padding: 0;
+  margin: 20px;
+  border: none;
+  color: #fff;
+  background: #282a36;
+  font-family: sans-serif;
 }
