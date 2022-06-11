@@ -1,9 +1,12 @@
-import Button from './components/Button';
+import Form from './components/Form';
+import List from './components/List';
 
 function App() {
   return (
     <div className="App">
-      <Button />
+      <h1> TODO Studies App </h1>
+      <Form />
+      <List />
     </div>
   );
 }
