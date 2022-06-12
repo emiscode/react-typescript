@@ -1,5 +1,10 @@
 # React with TypeScript: TODO Studies App
 
+![This is an image](public/app-desktop.png)
+
+![This is an image](public/app-mobile.png)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
