@@ -1,5 +1,5 @@
 import Form from '../components/Form';
-import List from '../components/List';
+import List from '../components/ListComponent';
 import style from './App.module.scss';
 
 function App() {

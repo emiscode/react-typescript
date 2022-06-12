@@ -1,3 +1,4 @@
+import Item from './Item';
 import style from './List.module.scss';
 
 function List() {
@@ -16,12 +17,12 @@ function List() {
         <aside className={style.listTasks}>
             <h2> Daily Studies! </h2>
             <ul>
-                {tasks.map((item, index) => (
-                    <li key={index} className={style.item}>
-                        <h3> {item.task} </h3>
-                        <span> {item.time} </span>
-                    </li>
-                ))}
+               {tasks.map((item, index) => (
+                   <Item 
+                    key={index}
+                    {...item}
+                   />
+               ))}
             </ul>
         </aside>
     )
