@@ -7,9 +7,10 @@ import style from "./Timer.module.scss";
 
 interface Props {
     selected: ITask | undefined
+    completeTask: () => void
 }
 
-export default function Timer({ selected }: Props) {
+export default function Timer({ selected, completeTask }: Props) {
     const [time, setTime] = useState<number>();
 
     useEffect(() => {
@@ -24,6 +25,8 @@ export default function Timer({ selected }: Props) {
                 setTime(counter - 1);
                 return countdown(counter - 1);
             }
+
+            completeTask();
         }, 1000);
     }
 
