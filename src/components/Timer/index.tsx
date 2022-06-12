@@ -18,13 +18,25 @@ export default function Timer({ selected }: Props) {
         }
     }, [selected]);
 
+    function countdown(counter: number = 0) {
+        setTimeout(() => {
+            if (counter > 0) {
+                setTime(counter - 1);
+                return countdown(counter - 1);
+            }
+        }, 1000);
+    }
+
     return (
         <div className={style.timer}>
             <p className={style.title}>Pick up a card and start the timer!</p>
             <div className={style.clockWrapper}>
                 <Clock time={time}/>
             </div>
-            <Button text="START"/>
+            <Button 
+                onClick={() => countdown(time)}
+                text="START"
+            />
         </div>
     )
 }
