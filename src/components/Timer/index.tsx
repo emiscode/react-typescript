@@ -22,7 +22,7 @@ export default function Timer({ selected }: Props) {
         <div className={style.timer}>
             <p className={style.title}>Pick up a card and start the timer!</p>
             <div className={style.clockWrapper}>
-                <Clock />
+                <Clock time={time}/>
             </div>
             <Button text="START"/>
         </div>
