@@ -15,7 +15,7 @@ function List() {
 
     return (
         <aside className={style.listTasks}>
-            <h2> Daily Studies! </h2>
+            <h2 className={style.title}> Daily Studies </h2>
             <ul>
                {tasks.map((item, index) => (
                    <Item 
